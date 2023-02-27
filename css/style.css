@@ -1,41 +1,13 @@
 @import "reset.css";
 @import "jquery.fancybox-1.3.4.css";
 @import "layout.css";
-
 /* Getting the new tags to behave */
-article,
-aside,
-audio,
-canvas,
-command,
-datalist,
-details,
-embed,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-keygen,
-meter,
-nav,
-output,
-progress,
-section,
-source,
-video {
-	display: block;
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {
+	display:block;
 }
-
-mark,
-rp,
-rt,
-ruby,
-summary,
-time {
-	display: inline;
+mark, rp, rt, ruby, summary, time {
+	display:inline;
 }
-
 /*************************Global*****************************/
 body {
 	position: absolute;
@@ -48,18 +20,15 @@ body {
 	overflow: hidden;
 	z-index: 1;
 }
-
 body p a {
-	text-decoration: none;
+	text-decoration:none;
 	color: #FFF;
 }
-
 .wrapper {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
 }
-
 h1 {
 	left: 0;
 	top: 133px;
@@ -67,7 +36,6 @@ h1 {
 	margin: 35px 0 0 0;
 	display: inline-block;
 }
-
 h1>a {
 	position: relative;
 	display: inline-block;
@@ -76,9 +44,8 @@ h1>a {
 	overflow: hidden;
 	width: 290px;
 	height: 152px;
-	/* background: url(../images/logo.png) center no-repeat; */
+	background: url(../images/logo.png) center no-repeat;
 }
-
 h2 {
 	letter-spacing: 0px;
 	font: 19px/20px 'Quattrocento Sans', sans-serif;
@@ -86,23 +53,19 @@ h2 {
 	padding-bottom: 28px;
 	text-transform: uppercase;
 }
-
 h3 {
 	font: 18px/24px 'Quattrocento Sans', sans-serif;
 	color: #FFF;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
-
 p {
 	margin-bottom: 31px;
 }
-
 a {
 	font-weight: bold;
 	color: #FFF;
 }
-
 #glob {
 	position: absolute;
 	width: 100%;
@@ -110,36 +73,29 @@ a {
 	overflow: hidden;
 	z-index: 2;
 }
-
 .spinner {
-	position: fixed;
+	position:fixed;
 	left: 0px;
 	top: 0px;
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url("../images/loading.gif") 50% 50% no-repeat #000;
+	background: url( "../images/loading.gif") 50% 50% no-repeat #000;
 }
-
-header,
-footer {
-	position: absolute;
-	width: 100%;
-	z-index: 100;
+header, footer {
+	position:absolute;
+	width:100%;
+	z-index:100;
 }
-
 .color1 {
 	color: #d6d6d6;
 }
-
 .color2 {
 	color: #5a5a5c;
 }
-
 .color3 {
 	color: #FFF;
 }
-
 /**************header*************/
 header {
 	overflow: hidden;
@@ -147,7 +103,6 @@ header {
 	height: 320px;
 	background: url(../images/patternhead.jpg) repeat-x;
 }
-
 /**********end header**************/
 /**************menu****************/
 .menu {
@@ -158,23 +113,20 @@ header {
 	top: 20px;
 	height: 25px;
 }
-
-#menu>li {
+#menu > li {
 	display: inline-block;
 	position: relative;
 	text-align: center;
 	float: left;
 }
-
-#menu>li {
+#menu > li {
 	display: inline-block;
 	position: relative;
 	text-align: center;
 	float: left;
 	color: #FFF;
 }
-
-#menu>li>a {
+#menu > li > a {
 	height: 40px;
 	display: inline-block;
 	font: 14px/20px 'Quattrocento Sans', sans-serif;
@@ -186,8 +138,7 @@ header {
 	position: relative;
 	z-index: 2;
 }
-
-#menu>li>a.first {
+#menu > li > a.first {
 	display: inline-block;
 	font: 14px/20px 'Quattrocento Sans', sans-serif;
 	color: black;
@@ -196,8 +147,7 @@ header {
 	text-decoration: none;
 	background: none;
 }
-
-#menu>li>strong {
+#menu > li > strong {
 	display: inline-block;
 	position: absolute;
 	height: 100%;
@@ -209,8 +159,7 @@ header {
 	box-shadow: 0px 0px 4px 1px #ffffff;
 	float: left;
 }
-
-#menu>li>span {
+#menu > li > span {
 	font: 14px/20px 'Quattrocento Sans', sans-serif;
 	text-align: center;
 	display: inline-block;
@@ -221,34 +170,29 @@ header {
 	left: -1px;
 	text-transform: uppercase;
 }
-
-.arrow>a {
+.arrow> a {
 	display: inline-block !important;
 }
-
 .arrow img {
 	margin-left: 20px;
 	display: inline-block;
 	margin-top: 3px;
 }
-
 .submenu_1 {
 	position: absolute;
 	height: 73px;
-	z-index: 9100;
+	z-index:9100;
 	left: 84px;
-	top: 117px;
+	top:117px;
 	width: 131px;
 	background: #6b6b6b;
 	text-align: left;
 }
-
 .submenu_1 li {
 	top: 13px;
-	position: relative;
+	position:relative;
 	display: inline-block;
 }
-
 .submenu_1 a {
 	font: 15px/18px 'Quattrocento Sans', sans-serif;
 	text-transform: uppercase;
@@ -260,20 +204,15 @@ header {
 	box-shadow: none;
 	text-align: left;
 }
-
 .m_top1 {
 	margin-top: -5px;
 }
-
 .m_top2 {
 	margin-top: -10px;
 }
-
-.submenu_1 li>a:hover,
-.submenu_1 li.sfHover>a {
+.submenu_1 li>a:hover, .submenu_1 li.sfHover>a {
 	color: #919191;
 }
-
 .submenu_2 {
 	position: absolute;
 	height: 50px;
@@ -284,13 +223,11 @@ header {
 	background: #494949;
 	text-align: left;
 }
-
 .submenu_2 li {
 	top: 10px;
-	position: relative;
+	position:relative;
 	display: inline-block;
 }
-
 .submenu_2 a {
 	font: 15px/18px 'Quattrocento Sans', sans-serif;
 	text-transform: uppercase;
@@ -302,12 +239,9 @@ header {
 	box-shadow: none;
 	text-align: left;
 }
-
-.submenu_2 li>a:hover,
-.submenu_1 li.sfHover>a {
+.submenu_2 li>a:hover, .submenu_1 li.sfHover>a {
 	color: #919191;
 }
-
 /*************end menu***********/
 /***************Pages Content******************/
 #content {
@@ -317,65 +251,55 @@ header {
 	z-index: 50;
 	margin-top: 290px;
 }
-
 #content>ul {
 	width: 100%;
 	height: 100%;
 }
-
 #content>ul>li.no_disp {
 	display: none;
 	width: 0;
 	height: 0;
 }
-
 #content>ul>li {
 	position: absolute;
 	width: 100%;
 	background: url(../images/pattern2.jpg);
 	overflow: hidden;
 	margin-top: -8px;
-	-webkit-box-shadow: 0px 0px 3px 1px rgba(20, 20, 20, 0.5);
-	box-shadow: 0px 0px 3px 1px rgba(20, 20, 20, 0.5);
+    -webkit-box-shadow:  0px 0px 3px 1px rgba(20, 20, 20, 0.5);
+    box-shadow:  0px 0px 3px 1px rgba(20, 20, 20, 0.5);
 }
-
 .link1 {
 	font: 18px/20px 'Quattrocento Sans', sans-serif;
 	text-transform: uppercase;
 	text-decoration: none;
 }
-
-.list1>li {
+.list1> li {
 	position: relative;
 	margin-bottom: 26px;
 	border-bottom: 1px solid #282828;
 	padding-bottom: 26px;
 }
-
-.list1>li.last {
+.list1 > li.last {
 	position: relative;
 	margin-bottom: 0px;
 	border-bottom: none;
 	padding-bottom: 0px;
 }
-
-.list1>li img {
+.list1> li img {
 	display: inline-block;
 	margin-right: 30px;
 }
-
-.list1>li .box1 {
+.list1> li .box1 {
 	margin-top: 13px;
 	display: inline-block;
 	width: 187px;
 }
-
-.list1>li .box2 {
+.list1> li .box2 {
 	margin-top: 13px;
 	display: inline-block;
 	width: 315px;
 }
-
 .sitem_over {
 	position: absolute;
 	z-index: 2;
@@ -384,15 +308,13 @@ header {
 	display: none;
 	overflow: hidden;
 }
-
 .sitem_over>strong {
 	position: relative;
-	background: url('../images/zoomimg.png') center no-repeat;
+	background: url( '../images/zoomimg.png') center no-repeat;
 	width: 100%;
 	height: 100%;
 	display: block;
 }
-
 /*---------------slider------------------*/
 .slider {
 	left: -12px;
@@ -402,7 +324,6 @@ header {
 	margin: 0 0 10px 0;
 	position: relative;
 }
-
 .slider_nav {
 	position: relative;
 	top: -15px;
@@ -412,10 +333,9 @@ header {
 	float: right;
 	margin-bottom: 0;
 }
-
 a.nav_item {
 	padding: 2px 0 0 0;
-	color: #5a5a5c;
+	color:#5a5a5c;
 	font-size: 13px;
 	text-decoration: none;
 	position: relative;
@@ -426,7 +346,6 @@ a.nav_item {
 	text-align: center;
 	border: 1px solid #282828;
 }
-
 a.nav_item.last {
 	padding: 2px 0 0 0;
 	color: #5a5a5c;
@@ -440,24 +359,19 @@ a.nav_item.last {
 	text-align: center;
 	border: 1px solid #282828;
 }
-
 a.nav_item:hover {
 	color: #FFF;
 	text-decoration: none;
 	border: 1px solid #c1c1c1;
 }
-
-a.nav_item.active,
-a.nav_item.active:hover {
+a.nav_item.active, a.nav_item.active:hover {
 	color: #FFF;
 	border: 1px solid #c1c1c1;
 	text-decoration: none;
 }
-
 .list2 {
 	width: 910px;
 }
-
 .list2>li {
 	float: left;
 	display: inline-block;
@@ -465,7 +379,6 @@ a.nav_item.active:hover {
 	border-right: 1px solid #282828;
 	border-bottom: 1px solid #282828;
 }
-
 .list2>li.last {
 	float: left;
 	display: inline-block;
@@ -473,7 +386,6 @@ a.nav_item.active:hover {
 	border-bottom: 1px solid #282828;
 	border-right: none;
 }
-
 .list2>li.first {
 	float: left;
 	display: inline-block;
@@ -481,7 +393,6 @@ a.nav_item.active:hover {
 	border-bottom: 1px solid #282828;
 	border-right: 1px solid #282828;
 }
-
 .list2>li.bottom {
 	float: left;
 	display: inline-block;
@@ -489,7 +400,6 @@ a.nav_item.active:hover {
 	border-right: 1px solid #282828;
 	border-bottom: none;
 }
-
 .list2>li.last2 {
 	float: left;
 	display: inline-block;
@@ -497,7 +407,6 @@ a.nav_item.active:hover {
 	border-right: none;
 	border-bottom: none;
 }
-
 .list2>li.first2 {
 	float: left;
 	display: inline-block;
@@ -505,24 +414,20 @@ a.nav_item.active:hover {
 	border-right: 1px solid #282828;
 	border-bottom: none;
 }
-
 /*-------------end slider-------------*/
 .list3 {
 	position: relative;
 }
-
 .list3>li {
 	margin-bottom: 12px;
 	display: inline-block;
 }
-
-.list3>li a {
+.list3 > li a {
 	text-transform: uppercase;
 	color: #5a5a5c;
 	font-weight: normal;
 	text-decoration: none;
 }
-
 .list3>li>a span {
 	margin-right: 10px;
 	display: inline-block;
@@ -532,44 +437,37 @@ a.nav_item.active:hover {
 	top: 8px;
 	background: #FFF;
 }
-
 .list4 {
 	position: relative;
 	top: -2px;
 }
-
-.list4>li {
+.list4 > li {
 	position: relative;
 	width: 100%;
 	height: 14px;
 	margin-bottom: 6px;
 }
-
-.list4>li>div {
+.list4 > li> div {
 	position: relative;
 }
-
 .list4>li>div>span {
 	display: table-cell;
 	white-space: nowrap;
 }
-
 .list4>li>div>span:first-child+span {
 	width: 100%;
 	background: url('../images/dots.png') 0 13px repeat-x;
 }
-
 .width1 {
 	top: -12px;
-	width: 264px;
+	width: 360px;
 }
-
 /*google map*/
 .google_map {
 	float: left;
 	display: inline-block;
 	margin: 0 20px 15px 0;
-	position: relative;
+	position:  relative;
 	overflow: hidden;
 	width: 300px;
 	height: 215px;
@@ -579,7 +477,6 @@ a.nav_item.active:hover {
 	background-repeat: no-repeat;
 	background-position: 50%;
 }
-
 /*---end map---*/
 .address {
 	display: inline-block;
@@ -588,20 +485,17 @@ a.nav_item.active:hover {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-
 .phone1 {
 	line-height: 18px;
 	color: #5a5a5c;
 	display: inline-block;
 	width: 85px;
 }
-
 .c1 {
 	line-height: 20px;
 	color: #5a5a5c;
 	width: 210px;
 }
-
 .contactText_2 {
 	font: 13px/18px 'Tahoma', sans-serif;
 	display: inline-block;
@@ -610,14 +504,12 @@ a.nav_item.active:hover {
 	text-decoration: none;
 	margin: 0 4px 0 -40px;
 }
-
 /******************************Forms*************************** */
 #form1 {
 	font: 13px/18px 'Tahoma', sans-serif;
 	color: #7c7c7c;
 	position: relative;
 }
-
 #form1 input {
 	position: relative;
 	font: 13px/18px 'Tahoma', sans-serif;
@@ -630,7 +522,6 @@ a.nav_item.active:hover {
 	box-shadow: none;
 	background: none;
 }
-
 #form1 textarea {
 	background: none;
 	font: 13px/18px 'Tahoma', sans-serif;
@@ -646,7 +537,6 @@ a.nav_item.active:hover {
 	outline: none;
 	resize: none;
 }
-
 #form1 label {
 	height: 50px !important;
 	font: 10px Trebuchet MS, sans-serif;
@@ -656,9 +546,7 @@ a.nav_item.active:hover {
 	min-height: 30px;
 	padding-bottom: 6px;
 }
-
-#form1 .error,
-#form1 .empty {
+#form1 .error, #form1 .empty {
 	font: 10px Trebuchet MS, sans-serif !important;
 	top: -22px;
 	position: relative;
@@ -666,12 +554,10 @@ a.nav_item.active:hover {
 	color: #7c7c7c;
 	display: none;
 }
-
-.success {
+.success{
 	font: 12px/18px 'Tahoma', sans-serif;
-	color: #FFF;
+    color: #FFF;    
 }
-
 .buttons {
 	margin: 122px 0 0 0;
 	float: right;
@@ -680,7 +566,6 @@ a.nav_item.active:hover {
 	display: block;
 	z-index: 100;
 }
-
 .buttons a {
 	font: 18px/20px 'Quattrocento Sans', sans-serif;
 	color: #FFF;
@@ -692,7 +577,6 @@ a.nav_item.active:hover {
 	-o-transition: all 0.25s ease;
 	transition: all 0.25s ease;
 }
-
 .buttons a:hover {
 	font: 18px/20px 'Quattrocento Sans', sans-serif;
 	color: #ad0f11;
@@ -700,29 +584,23 @@ a.nav_item.active:hover {
 	text-transform: uppercase;
 	position: relative;
 }
-
 /* Form defaults */
-input,
-select,
-textarea {
+input, select, textarea {
 	margin-bottom: 22px;
 	font: 13px/18px 'Tahoma', sans-serif;
 	color: #726a64;
 	vertical-align: middle;
 	font-weight: normal;
 }
-
 /*---end forms-----*/
 .privacytxt {
 	color: #5a5a5c;
 	font-weight: normal;
 }
-
 /*********************Footer**********************/
 footer {
 	bottom: 0;
 }
-
 .mainFooter {
 	color: #1c1c1e;
 	margin: 0 auto;
@@ -733,13 +611,11 @@ footer {
 	width: 250px;
 	background: #FFF;
 }
-
 .mainFooter a {
 	color: #525254;
 }
-
 .mainFooter p {
-	font: 12px/20px 'Arial', sans-serif;
+	font:12px/20px 'Arial', sans-serif;
 	color: #525254;
 	margin: 7px 0 0 20px;
 	float: left;
@@ -747,30 +623,25 @@ footer {
 	margin-bottom: 0;
 	text-transform: uppercase;
 }
-
 #follow-icon {
 	margin: 7px 10px 0 0;
 	position: relative;
 	width: 50px;
 	float: right;
 }
-
 #follow-icon a {
 	position: relative;
 	display: inline-block;
 }
-
 #follow-icon>li {
 	position: relative;
 	display: inline-block;
 }
-
 #follow-icon .img_act {
-	position: absolute;
-	top: 0;
-	left: 0;
+	position:absolute;
+	top:0;
+	left:0;
 }
-
 /******pagin******/
 .pattern {
 	position: absolute;
@@ -778,17 +649,14 @@ footer {
 	width: 100%;
 	background: url('../images/bgpattern.png');
 }
-
 #bgStretch {
-	z-index: 1;
+	z-index:1;
 }
-
 #bgStretch>img {
 	background: #111;
 }
-
-.pagin {}
-
+.pagin {
+}
 .pagin li {
 	display: inline-block;
 	margin: 0 17px 20px 0;
@@ -796,13 +664,11 @@ footer {
 	height: 45px;
 	width: 74px;
 }
-
 .pagin li>a {
 	display: block;
 	width: 100%;
 	height: 100%;
 }
-
 #bgControls {
 	position: absolute;
 	width: 100%;
@@ -810,17 +676,14 @@ footer {
 	top: 50%;
 	left: 0;
 }
-
-#bgControls>.next {
+#bgControls> .next {
 	position: fixed;
 	right: -70px;
 }
-
-#bgControls>.prev {
+#bgControls> .prev {
 	position: fixed;
 	left: -70px;
 }
-
 #bgControls>a {
 	position: relative;
 	display: inline-block;
@@ -829,10 +692,7 @@ footer {
 	width: 47px;
 	height: 93px;
 }
-
-.prev>span,
-.next>span,
-.pause>span {
+.prev>span, .next>span, .pause>span {
 	display: inline-block;
 	position: relative;
 	width: 100%;
@@ -840,100 +700,82 @@ footer {
 	overflow: hidden;
 	z-index: 10;
 }
-
 .prev>span {
-	background: url(../images/arrowL.png) left no-repeat;
+	background: url(../images/arrowL.png) left  no-repeat;
 	-webkit-transition: all 0.18s ease-in-out;
 	-moz-transition: all 0.18s ease-in-out;
 	-o-transition: all 0.18s ease-in-out;
 	transition: all 0.18s ease-in-out;
 }
-
 .next>span {
-	background: url(../images/arrowR.png) left no-repeat;
+	background: url(../images/arrowR.png) left  no-repeat;
 	-webkit-transition: all 0.18s ease-in-out;
 	-moz-transition: all 0.18s ease-in-out;
 	-o-transition: all 0.18s ease-in-out;
 	transition: all 0.18s ease-in-out;
 }
-
 .prev>span:hover {
-	background: url(../images/arrowL.png) right no-repeat;
+	background: url(../images/arrowL.png) right  no-repeat;
 }
-
 .next>span:hover {
-	background: url(../images/arrowR.png) right no-repeat;
+	background: url(../images/arrowR.png) right  no-repeat;
 }
-
 /*********************end footer********************/
 /**************************Margin Padding*************************/
 .mp_clear {
-	margin: 0;
-	padding: 0;
+	margin:0;
+	padding:0;
 }
-
 .fleft {
-	float: left;
+	float:left;
 }
-
 .fright {
-	float: right;
+	float:right;
 }
-
 .m_right1 {
 	margin-right: 68px;
 }
-
 .m_right2 {
 	margin-right: 28px;
 }
-
+.m_left1 {
+	margin-left: 135px;
+}
 .m_top1 {
 	margin-top: -5px;
 }
-
 .pad1 {
 	padding: 34px 52px 55px 40px;
 	background: url(../images/pattern1.jpg) repeat;
 }
-
 .pad2 {
 	padding: 34px 30px 20px 38px;
 }
-
 .pad3 {
 	padding: 36px 30px 32px 40px;
 }
-
 .pad4 {
 	padding: 34px 32px 55px 40px;
 	background: url(../images/pattern1.jpg) repeat;
 }
-
 .pad5 {
 	padding: 34px 30px 20px 30px;
 }
-
 .pad6 {
 	padding: 36px 30px 65px 40px;
 }
-
 .pad7 {
 	padding: 34px 37px 20px 38px;
 }
-
 .m_bot1 {
 	margin-bottom: 25px;
 }
-
 .m_bot2 {
 	margin-bottom: 16px;
 }
-
 .m_bot3 {
 	margin-bottom: 36px;
 }
-
 .m_bot4 {
 	margin-bottom: 20px;
 }
